@@ -1,0 +1,60 @@
+﻿<Window x:Class="Chat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chat"
+        mc:Ignorable="d"
+        Title="Massenger" Height="700" Width="1000">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="600*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!--Первый столбец с иконками-->
+        <Border  Grid.RowSpan="3"  Background="Gray" />
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Image Grid.Row="0"  Height="50" Width="50">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/chat-person.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+            <Image Grid.Row="0"  Height="40" Width="50">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/phone-call.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+            <Image Grid.Row="0"  Height="40" Width="45">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/chat-groups.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+
+        </StackPanel>
+        <Image Grid.Row="3" Grid.Column="0" Height="50" Width="50">
+            <Image.Source>
+                <BitmapImage>
+                    <BitmapImage.UriSource>Resources/setting-icon.png</BitmapImage.UriSource>
+                </BitmapImage>
+            </Image.Source>
+        </Image>
+        <!--Второй столбец1121-->
+    </Grid>
+</Window>
