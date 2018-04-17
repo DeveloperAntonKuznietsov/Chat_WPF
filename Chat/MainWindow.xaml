@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chat"
         mc:Ignorable="d"
-        Title="Massenger" Height="700" Width="1000">
+        Title="Massenger" Height="700" Width="1000" Icon="Resources/bedwyr128.ico" >
+    <!--WindowStyle="None" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"-->
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="5*"/>
@@ -23,7 +24,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!--Первый столбец с иконками-->
-        <Border  Grid.RowSpan="3"  Background="Gray" />
+        <Border  Grid.RowSpan="3" Grid.Column="0"  Background="Gray" />
         <StackPanel Grid.Column="0" Grid.Row="1">
             <Image Grid.Row="0"  Height="50" Width="50">
                 <Image.Source>
@@ -46,15 +47,48 @@
                     </BitmapImage>
                 </Image.Source>
             </Image>
-
+            
         </StackPanel>
-        <Image Grid.Row="3" Grid.Column="0" Height="50" Width="50">
+        <Image Name="btnSetings" Grid.Row="3" Grid.Column="0" Height="50" Width="50" > <!--MouseLeftButtonUp="Image_MouseLeftButtonUp"-->
             <Image.Source>
                 <BitmapImage>
                     <BitmapImage.UriSource>Resources/setting-icon.png</BitmapImage.UriSource>
                 </BitmapImage>
             </Image.Source>
         </Image>
-        <!--Второй столбец1121-->
+        <!--Второй столбец-->
+        <Border  Grid.RowSpan="3" Grid.Column="1" Background="LightGray" />
+        <RichTextBox Grid.Row="0" Grid.Column="1">
+         </RichTextBox>
+        
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Button  Height="50" BorderBrush="LightGray">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Grid.Row="0"  Height="40" Width="45" Source="Resources/human.png"/>
+                    <StackPanel>
+                        <TextBlock Text="Richard Sakurov" FontWeight="Bold" FontSize="15" Foreground="Chocolate"/>
+                        <TextBlock Text="Hello!How do you do?" FontWeight="Bold"  FontSize="10"  Margin="10 0 0 0 "/>
+                    </StackPanel>
+                </StackPanel>
+            </Button>
+            <Button  Height="50" BorderBrush="LightGray">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Grid.Row="0"  Height="40" Width="45" Source="Resources/human.png"/>
+                    <StackPanel>
+                        <TextBlock Text="Anton Kuznetsov" FontWeight="Bold" FontSize="15" Foreground="Chocolate"/>
+                        <TextBlock Text="I haven't started yet" FontWeight="Bold"  FontSize="10"  Margin="10 0 0 0 "/>
+                    </StackPanel>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        
+        <!--Третий столбец-->
+        <Border Grid.Column="2" Background="Orange"/>
+        <StackPanel Grid.Column="2">
+            <TextBlock Text="Richard Sakurov" FontWeight="Bold" FontSize="13" Margin="10 0 0 0"/>
+            <TextBlock Text="was online 3 minuts ago" FontSize="10" Foreground="White" Margin="12 0 0 0"/>
+            
+        </StackPanel>
+        
     </Grid>
 </Window>

@@ -121,5 +121,23 @@
   <ItemGroup>
     <Resource Include="Resources\chat-person.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\if_Messages_206461.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\running.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\bedwyr128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cat1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cat2.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
