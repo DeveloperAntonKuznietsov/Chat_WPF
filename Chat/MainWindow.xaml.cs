@@ -24,5 +24,10 @@ namespace Chat
         {
             InitializeComponent();
         }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Мяу мяу");
+        }
     }
 }
