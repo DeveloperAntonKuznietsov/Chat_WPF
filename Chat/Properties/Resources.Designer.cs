@@ -61,6 +61,16 @@ namespace Chat.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background_site1 {
+            get {
+                object obj = ResourceManager.GetObject("background_site1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
         /// </summary>
         internal static System.Drawing.Icon bedwyr128 {
@@ -173,6 +183,16 @@ namespace Chat.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search2 {
+            get {
+                object obj = ResourceManager.GetObject("search2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap send_message {
             get {
                 object obj = ResourceManager.GetObject("send_message", resourceCulture);
@@ -186,6 +206,26 @@ namespace Chat.Properties {
         internal static System.Drawing.Bitmap setting_icon {
             get {
                 object obj = ResourceManager.GetObject("setting_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soundOff {
+            get {
+                object obj = ResourceManager.GetObject("soundOff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soundOn {
+            get {
+                object obj = ResourceManager.GetObject("soundOn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

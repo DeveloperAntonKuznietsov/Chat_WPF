@@ -14,9 +14,9 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -58,8 +58,12 @@
         </Image>
         <!--Второй столбец-->
         <Border  Grid.RowSpan="3" Grid.Column="1" Background="LightGray" />
-        <RichTextBox Grid.Row="0" Grid.Column="1">
-         </RichTextBox>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Image Source="Resources/search.png" Height="25" Width="25"/>
+            <RichTextBox Background="LightGray" Width="143" BorderBrush="LightGray" >
+</RichTextBox>
+        </StackPanel>
+        
         
         <StackPanel Grid.Row="1" Grid.Column="1">
             <Button  Height="50" BorderBrush="LightGray">
@@ -82,13 +86,68 @@
             </Button>
         </StackPanel>
         
-        <!--Третий столбец-->
-        <Border Grid.Column="2" Background="Orange"/>
+        <!--Верх/Третий столбец-->
+        <Border Grid.Column="2" Grid.ColumnSpan="4" Background="Orange"/>
         <StackPanel Grid.Column="2">
             <TextBlock Text="Richard Sakurov" FontWeight="Bold" FontSize="13" Margin="10 0 0 0"/>
             <TextBlock Text="was online 3 minuts ago" FontSize="10" Foreground="White" Margin="12 0 0 0"/>
-            
+           </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="4">
+            <Image  Height="20" Width="20">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/paperclip.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+            <RichTextBox MaxHeight="40" MinWidth="725" BorderBrush="White">
+                
+            </RichTextBox>
+            <Image  Height="20" Width="20">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/send-message.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
         </StackPanel>
-        
+        <!---->
+        <Image Grid.Column="3" Height="20" Width="20" Margin="0 0 10 0">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/search2.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+         <Image Grid.Column="4" Height="20" Width="20" Margin="0 0 10 0">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/soundOn.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+        <Image Grid.Column="4" Height="20" Width="20" Margin="0 0 10 0">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/soundOn.png</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+        <Image Grid.Column="5" Height="20" Width="20" Margin="0 0 10 0">
+                <Image.Source>
+                    <BitmapImage>
+                        <BitmapImage.UriSource>Resources/cat2.ico</BitmapImage.UriSource>
+                    </BitmapImage>
+                </Image.Source>
+            </Image>
+        <!---->
+        <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4">
+            <RichTextBox BorderBrush="LightGray" >
+                <RichTextBox.Background>
+                    <ImageBrush ImageSource="Resources/background-site1.jpg"/>
+                </RichTextBox.Background>
+            </RichTextBox>
+        </Grid>
     </Grid>
 </Window>

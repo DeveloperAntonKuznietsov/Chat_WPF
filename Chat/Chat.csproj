@@ -139,5 +139,17 @@
   <ItemGroup>
     <Resource Include="Resources\cat2.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\soundOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\soundOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\background-site1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
