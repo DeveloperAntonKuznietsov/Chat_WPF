@@ -24,95 +24,74 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!--Первый столбец с иконками-->
-        <Border  Grid.RowSpan="3" Grid.Column="0"  Background="Gray" />
+        <Border  Grid.RowSpan="3" Grid.Column="0"  Background="	#313131" />
         <StackPanel Grid.Column="0" Grid.Row="1">
-            <Image Grid.Row="0"  Height="50" Width="50">
-                <Image.Source>
-                    <BitmapImage>
-                        <BitmapImage.UriSource>Resources/chat-person.png</BitmapImage.UriSource>
-                    </BitmapImage>
-                </Image.Source>
-            </Image>
-            <Image Grid.Row="0"  Height="40" Width="50">
-                <Image.Source>
-                    <BitmapImage>
-                        <BitmapImage.UriSource>Resources/phone-call.png</BitmapImage.UriSource>
-                    </BitmapImage>
-                </Image.Source>
-            </Image>
-            <Image Grid.Row="0"  Height="40" Width="45">
-                <Image.Source>
-                    <BitmapImage>
-                        <BitmapImage.UriSource>Resources/chat-groups.png</BitmapImage.UriSource>
-                    </BitmapImage>
-                </Image.Source>
-            </Image>
-            
+            <Image Grid.Row="0"  Height="40" Width="40" Source="Resources/1055030-64.png" Margin="5"/>
+            <Image Grid.Row="0"  Height="40" Width="40" Source="Resources/1055012-64.png" Margin="5"/>
+            <Image Grid.Row="0"  Height="40" Width="40" Source="Resources/1055095-64.png" Margin="5"/>
+
         </StackPanel>
-        <Image Name="btnSetings" Grid.Row="3" Grid.Column="0" Height="50" Width="50" > <!--MouseLeftButtonUp="Image_MouseLeftButtonUp"-->
+        <Image Name="btnSetings" Grid.Row="3" Grid.Column="0" Height="40" Width="40"  >
+            <!--MouseLeftButtonUp="Image_MouseLeftButtonUp"-->
             <Image.Source>
                 <BitmapImage>
-                    <BitmapImage.UriSource>Resources/setting-icon.png</BitmapImage.UriSource>
+                    <BitmapImage.UriSource>Resources/1054957-64.png</BitmapImage.UriSource>
                 </BitmapImage>
             </Image.Source>
         </Image>
         <!--Второй столбец-->
-        <Border  Grid.RowSpan="3" Grid.Column="1" Background="LightGray" />
+        <Border  Grid.RowSpan="3" Grid.Column="1" Background="	#828282" />
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
-            <Image Source="Resources/search.png" Height="25" Width="25"/>
-            <RichTextBox Background="LightGray" Width="143" BorderBrush="LightGray" >
-</RichTextBox>
+            <Image Source="Resources/search32.png" Height="25" Width="25"/>
+            <RichTextBox Background="#828282" Width="143" BorderBrush="#828282" >
+            </RichTextBox>
         </StackPanel>
-        
-        
+
+
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <Button  Height="50" BorderBrush="LightGray">
+            <Button  Height="50" BorderBrush="#828282" Background="#828282">
                 <StackPanel Orientation="Horizontal" >
-                    <Image Grid.Row="0"  Height="40" Width="45" Source="Resources/human.png"/>
+                    <Image Grid.Row="0"  Height="40" Width="45" Source="Resources/noname.png"/>
                     <StackPanel>
-                        <TextBlock Text="Richard Sakurov" FontWeight="Bold" FontSize="15" Foreground="Chocolate"/>
+                        <TextBlock Text="Richard Sakurov" FontWeight="Bold" FontSize="15" Foreground="Black"/>
                         <TextBlock Text="Hello!How do you do?" FontWeight="Bold"  FontSize="10"  Margin="10 0 0 0 "/>
                     </StackPanel>
                 </StackPanel>
             </Button>
-            <Button  Height="50" BorderBrush="LightGray">
+            <Button  Height="50" BorderBrush="#828282" Background="#828282">
                 <StackPanel Orientation="Horizontal" >
-                    <Image Grid.Row="0"  Height="40" Width="45" Source="Resources/human.png"/>
+                    <Image Grid.Row="0"  Height="40" Width="45" Source="Resources/noname.png"/>
                     <StackPanel>
-                        <TextBlock Text="Anton Kuznetsov" FontWeight="Bold" FontSize="15" Foreground="Chocolate"/>
+                        <TextBlock Text="Anton Kuznetsov" FontWeight="Bold" FontSize="15" Foreground="Black"/>
                         <TextBlock Text="I haven't started yet" FontWeight="Bold"  FontSize="10"  Margin="10 0 0 0 "/>
                     </StackPanel>
                 </StackPanel>
             </Button>
         </StackPanel>
-        
+
         <!--Верх/Третий столбец-->
-        <Border Grid.Column="2" Grid.ColumnSpan="4" Background="Orange"/>
+        <Border Grid.Column="2" Grid.ColumnSpan="4" Background="	#515151" HorizontalAlignment="Left" Width="772"/>
         <StackPanel Grid.Column="2">
             <TextBlock Text="Richard Sakurov" FontWeight="Bold" FontSize="13" Margin="10 0 0 0"/>
             <TextBlock Text="was online 3 minuts ago" FontSize="10" Foreground="White" Margin="12 0 0 0"/>
-           </StackPanel>
+        </StackPanel>
 
         <Grid  Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="4">
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="720*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Image  Height="20" Width="20" Grid.Column="0" Margin="5 0 0 0 ">
-                <Image.Source>
-                    <BitmapImage>
-                        <BitmapImage.UriSource>Resources/paperclip.png</BitmapImage.UriSource>
-                    </BitmapImage>
-                </Image.Source>
-            </Image>
-            <RichTextBox MaxHeight="40"  BorderBrush="White" Grid.Column="1">
-                
+            <Image  Height="40" Width="40" Grid.Column="0" Margin="5 0 0 0 " Source="Resources/paperclip2.png" />
+            <RichTextBox MaxHeight="40"  Background="White"  BorderBrush="White" Grid.Column="1" VerticalScrollBarVisibility="Auto" 
+                         FontSize="26">
+
             </RichTextBox>
-            <Image  Height="20" Width="20" Grid.Column="2" Margin="0 0 5 0">
+            <Image  Height="40" Width="40" Grid.Column="2" Margin="0 0 5 0">
                 <Image.Source>
                     <BitmapImage>
-                        <BitmapImage.UriSource>Resources/send-message.png</BitmapImage.UriSource>
+                        <BitmapImage.UriSource>Resources/send.png</BitmapImage.UriSource>
                     </BitmapImage>
                 </Image.Source>
             </Image>
@@ -135,14 +114,14 @@
         <Image Grid.Column="4" Height="20" Width="20" Margin="0 0 10 0">
                 <Image.Source>
                     <BitmapImage>
-                        <BitmapImage.UriSource>Resources/soundOn.png</BitmapImage.UriSource>
+                        <BitmapImage.UriSource>Resources/soundMax.png</BitmapImage.UriSource>
                     </BitmapImage>
                 </Image.Source>
             </Image>
         <Image Grid.Column="5" Height="20" Width="20" Margin="0 0 10 0" MouseLeftButtonDown="Image_MouseLeftButtonDown" >
                 <Image.Source>
                     <BitmapImage>
-                        <BitmapImage.UriSource>Resources/cat2.ico</BitmapImage.UriSource>
+                        <BitmapImage.UriSource>Resources/points.png</BitmapImage.UriSource>
                     </BitmapImage>
                 </Image.Source>
             </Image>

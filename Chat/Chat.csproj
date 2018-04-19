@@ -95,40 +95,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\dots-set.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\human.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\paperclip.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\phone-call.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\send-message.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\setting-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\chat-groups.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\chat-person.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\if_Messages_206461.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\cat.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\running.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\bedwyr128.ico" />
@@ -143,13 +110,61 @@
     <Resource Include="Resources\search2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\soundOff.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\soundOn.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\background-site1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1054957-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1055012-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1055030-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1055095-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\noname.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_gnome-searchtool_39022.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\back2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\back3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\paperclip2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundOff2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundMax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\points.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
